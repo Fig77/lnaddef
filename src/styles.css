@@ -1,0 +1,102 @@
+/** General classes **/
+
+body {
+	font-family: sans-serif;
+
+}
+
+h1,h2,h3 {
+	font-family: 'Gudea', sans-serif;
+}
+
+.text-yellow {
+  color: #FFEB3B;
+}
+
+.text-white {
+	color: #fafafa;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.justifyt-around {
+	justify-content: space-around;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.self-end {
+	align-self: flex-end;
+}
+
+.h-full {
+  height: 100vh;
+}
+
+.w-full {
+	width: 100vw;
+}
+
+.w-50 {
+	width: 50vw;
+}
+
+.hero-header {
+	background-color: #212121;
+	position: relative;
+}
+
+/* diag */
+
+.diagonal {
+  position: absolute;
+  right: 0;
+  background: transparent;
+  height: 100vh;
+  width: 50vw;
+  background-image: url('../theteam.jpg');
+  background-position: 40%;
+  background-repeat: no-repeat;
+  -webkit-clip-path: polygon(74% 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(74% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* header */
+
+.h1 {
+  font-size: 4.1rem;
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: start;
+  display: inline;
+}
+
+.header-text {
+	width: 40%;
+	margin-left: 2%;
+	padding: 15px;
+}
+
+.p {
+	font-size: 16px;
+}
