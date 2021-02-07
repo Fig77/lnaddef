@@ -6,7 +6,7 @@ body {
 }
 
 h1,h2,h3 {
-	font-family: 'Gudea', sans-serif;
+	font-family: 'Ubuntu', 'Gudea', sans-serif;
 }
 
 .text-yellow {
@@ -15,6 +15,10 @@ h1,h2,h3 {
 
 .text-white {
 	color: #fafafa;
+}
+
+.text-dark {
+	color: #212121;
 }
 
 .flex {
@@ -62,8 +66,17 @@ h1,h2,h3 {
 }
 
 .hero-header {
-	background-color: #212121;
+background-color: #000000;
+background-image: url('../theteam.webp');
+background-size: cover;
 	position: relative;
+}
+
+.overlay {
+ background-color: rgba(0,0,0,0.7);
+ position: absolute;
+ top: 0;
+ left: 0;
 }
 
 /* diag */
@@ -74,7 +87,7 @@ h1,h2,h3 {
   background: transparent;
   height: 100vh;
   width: 50vw;
-  background-image: url('../theteam.jpg');
+  background-image: url('../theteam.webp');
   background-position: 40%;
   background-repeat: no-repeat;
   -webkit-clip-path: polygon(74% 0, 100% 0, 100% 100%, 0% 100%);
@@ -83,12 +96,27 @@ h1,h2,h3 {
 
 /* header */
 
+.div-content {
+	width: 100%;
+}
+
 .h1 {
-  font-size: 4.1rem;
+  font-size: 3.1rem;
   letter-spacing: 1px;
   margin: 0;
   text-align: start;
   display: inline;
+  margin-bottom: 10px;
+}
+
+.h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: start;
+}
+
+.h2 > span {
+	margin-left: 3px
 }
 
 .header-text {
@@ -98,5 +126,41 @@ h1,h2,h3 {
 }
 
 .p {
-	font-size: 16px;
+	letter-spacing: 1px;
+	width: 70%;
+	font-size: 20px;
+	text-align: center;
+}
+
+.button {
+	border-style: solid;
+	border-width: thin;
+	background-color: transparent;
+	width: 180px;
+	height: 45px;
+	color: #FAFAFA;
+	margin: 5px;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.button-yellow {
+	border-color: #ffdb19;
+	background-color: #ffdb19;
+	color: #212121;
+	
+	
+}
+
+.button-yellow:hover {
+	background-color: transparent;
+	color: #fafafa;
+}
+
+.button-transparent {
+  border-color: #FFEB3B;
+}
+.button-transparent:hover {
+	background-color: #ffdb19;
+	color: #212121;
 }
