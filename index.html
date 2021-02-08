@@ -61,15 +61,15 @@
           <h1 class='h1 text-white'>Hello? Is it me you are looking for?</h1>
           <p class='p text-white'>I can see it in your eyes... I can feel it in your smile. You are everything I ever wanted...</p>
           <div class='flex flex-col'>
-            <form class='flex flex-col'>
+            <form class='flex flex-col' action="https://jamform.com/f/JPoZ-Nn14mW1gSHLiaKQr" method="POST">
               <div class='flex justify-around'>
-                <input type="text" placeholder='Ingrese su nombre'>
-                <input type='email' class='input' placeholder="Ingrese su email de contact">
+                <input type="text" name="nombre" placeholder='Ingrese su nombre' required>
+                <input type='email' name="mail" class='input' placeholder="Ingrese su email de contact" required>
               </div>
               <div>
-                <input type='textarea' class='textarea' placeholder="Who can it be now?">
+                <input type='textarea' name="message" class='textarea' placeholder="Who can it be now?" required>
               </div>
-              <button class='button button-yellow m-left-0'>Enviar</button>
+               <button tyoe="submit" target="_blank" class='button button-yellow m-left-0'>Enviar</button>
             </form>
             </div>
           </div>
