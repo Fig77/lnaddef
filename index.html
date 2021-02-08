@@ -45,7 +45,8 @@
           </div>
         </div>
       </section>
-      <section class='flex w-full h-full items-center products-container' name='our-products'>
+      <section class='relative flex w-full h-full items-center products-container' name='our-products'>
+        <h1 class='h1 h1-cornern'>Featured Product</h1>
         <div class='flex flex-col items-center w-50'>
           <h1 class='product-title text-center'>Cloud Appointments manager<br><span>healtcare services edition</span></h1>
           <p class='p p-small'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
@@ -55,9 +56,10 @@
         </div>
         <div class='w-50 diagonal diagonal-clinic'></div>
       </section>
-      <section name='contact' class='contact-container flex flex-col justify-center items-center'>
-          <h1 class='h1'>Hello? Is it me you are looking for?</h1>
-          <p class='p'>I can see it in your eyes... I can feel it in your smile. You are everything I ever wanted...</p>
+      <section name='contact' class='relative contact-container flex flex-col justify-center items-center'>
+        <div class='overlay flex flex-col justify-center items-center h-100 w-100'>
+          <h1 class='h1 text-white'>Hello? Is it me you are looking for?</h1>
+          <p class='p text-white'>I can see it in your eyes... I can feel it in your smile. You are everything I ever wanted...</p>
           <div class='flex flex-col'>
             <form class='flex flex-col'>
               <div class='flex justify-around'>
@@ -67,11 +69,11 @@
               <div>
                 <input type='textarea' class='textarea' placeholder="Who can it be now?">
               </div>
-              <button class='button button-yellow'>Enviar</button>
+              <button class='button button-yellow m-left-0'>Enviar</button>
             </form>
+            </div>
           </div>
       </section>
-      <footer>copiright tuvieja</footer>
     </main>
   </body>
 </html>
