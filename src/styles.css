@@ -116,10 +116,10 @@ h1,h2,h3 {
 }
 
 .hero-header {
-background-color: #000000;
-background-image: url('../theteam.webp');
-background-size: cover;
-	position: relative;
+  background-color: #000000;
+  background-image: url('../theteam.webp');
+  background-size: cover;
+  position: relative;
 }
 
 .overlay {
@@ -325,4 +325,34 @@ input {
 
 .input {
 	margin-left: 16px;
+}
+
+@media (max-width: 720px) {
+  /* header */
+
+  .h1 {
+  	font-size: 30px;
+  }
+
+  .p {
+    font-size: 18px;
+  }
+
+  .div-whatdo {
+  	padding: 10px 0 0 20px;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  	text-align: start;
+  }
+
+  .div-whatdo  > .h1 {
+  	width: 100%;
+  }
+
+  .div-whatdo > .p {
+    width: 70%;
+  }
+
 }
