@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Desarrollo de aplicaciones para negocios."/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&Gudea:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&Gudea:wght@400;700&display=swap" rel="stylesheet">
     <link href="src/norm.css" rel="stylesheet" >
     <link href="src/styles.css" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css">
     <title>DigitalSyrup</title>
   </head>
   <body>
-   <main>
+    <main>
       <header class='flex hero-header w-full h-full'>
         <div class='overlay flex flex-col justify-center items-center w-full h-full'>
           <div class='flex flex-col justify-center items-center'>
@@ -25,27 +25,38 @@
           </div>
         </div>
       </header>
-      <section class='relative flex h-full w-full container-whatdo' name='whatdo'>
-        <div class='flex flex-col justify-center w-full h-full'>
+      <section class='relative flex w-full container-whatdo' name='whatdo'>
+        <div class='flex flex-col flex-wrap justify-center w-full'>
           <div class='div-whatdo'>
             <h1 class='h1'>We don't have ducktapes on our notebooks</h1>
             <p class='p'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            <div class='flex flex-wrap badges justify-center'>
-               <i class="devicon-html5-plain-wordmark colored"></i>
-               <i class="devicon-javascript-plain colored"></i>
-               <i class="devicon-react-original-wordmark colored"></i>
+            <div class='flex flex-wrap items-center badges justify-center w-full'>
+              <div>
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-react-original-wordmark colored"></i>
                 <i class="devicon-vuejs-plain-wordmark colored"></i>
-               <i class="devicon-redux-original colored"></i>
-               <i class="devicon-rails-plain-wordmark colored"></i>
+              </div>
+              <div>
+                <i class="devicon-ruby-plain colored"></i>
+                <i class="devicon-rails-plain-wordmark colored"></i>
                 <i class="devicon-symfony-original-wordmark colored"></i>
-               <i class="devicon-codeigniter-plain-wordmark colored"></i>
-               <i class="devicon-docker-plain-wordmark colored"></i>
-               <i class="devicon-kubernetes-plain-wordmark colored"></i>
+                <i class="devicon-codeigniter-plain-wordmark colored"></i>
+                
+              </div>
+              <div>
+                <i class="devicon-redux-original colored"></i>
+                <i class="devicon-heroku-original colored"></i>
+                <i class="devicon-kubernetes-plain-wordmark colored"></i>
+                <i class="devicon-docker-plain-wordmark colored"></i>
+              </div>
+              
+              
             </div>
           </div>
         </div>
       </section>
-      <section class='relative flex w-full h-full items-center products-container' name='our-products'>
+      <section class='relative flex w-full items-center products-container' name='our-products'>
         <h1 class='h1 h1-cornern'>Featured Product</h1>
         <div class='flex flex-col items-center w-50'>
           <h1 class='product-title text-center'>Cloud Appointments manager<br><span>healtcare services edition</span></h1>
@@ -69,10 +80,10 @@
               <div>
                 <input type='textarea' name="message" class='textarea' placeholder="Who can it be now?" required>
               </div>
-               <button tyoe="submit" target="_blank" class='button button-yellow m-left-0'>Enviar</button>
+              <button tyoe="submit" target="_blank" class='button button-yellow m-left-0'>Enviar</button>
             </form>
-            </div>
           </div>
+        </div>
       </section>
     </main>
   </body>
