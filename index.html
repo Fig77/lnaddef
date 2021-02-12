@@ -8,19 +8,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&Gudea:wght@400;700&display=swap" rel="stylesheet">
     <link href="src/norm.css" rel="stylesheet" >
     <link href="src/styles.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"> 
+    <script src="https://use.fontawesome.com/15b557ad63.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css">
+
     <title>DigitalSyrup</title>
   </head>
   <body>
+    <button id="hamburguer" class="hamburguer hamburger hamburger--slider" type="button">
+       <span class="hamburger-box">
+       <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <nav id="nav">
+      <ul>
+        <li class='linav flex items-center'>Home</li>
+        <div class='line-div'></div>
+        <li class='linav flex items-center'>Nosotros</li>
+        <div class='line-div'></div>
+        <li class='linav flex items-center'>Productos</li>
+        <div class='line-div'></div>
+        <li class='linav flex items-center'>Contacto</li>
+        <div class='line-div'></div>
+      </ul>
+    </nav>
     <main>
       <header class='flex hero-header w-full h-full'>
         <div class='overlay flex flex-col justify-center items-center w-full h-full'>
-          <div class='flex flex-col justify-center items-center'>
-            <h1 class='h1 text-white'>We make more problems out of digital solutions</h1>
-            <p class='p text-white text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <div class='flex flex-col items-center'>
+            <h1 class='h1 text-white'>Soluciones digitales </h1>
+            <p class='p text-white text-center'>Nos enfocamos en la digitalización y automatización de servicios, para brindar valor agregado a tu negocio.</p>
             <div class='flex justify-center items-center'>
-              <button class='button button-transparent'>See our products</button>
-              <button class='button button-yellow'>Contact us</button>
+              <button class='button button-yellow'>Contáctanos</button>
             </div>
           </div>
         </div>
@@ -28,9 +47,9 @@
       <section class='relative flex w-full container-whatdo' name='whatdo'>
         <div class='flex flex-col flex-wrap justify-center w-full'>
           <div class='div-whatdo'>
-            <h1 class='h1'>We don't have ducktapes on our notebooks</h1>
-            <p class='p'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            <div class='flex flex-wrap items-center badges justify-center w-full'>
+            <h1 class='h1 text-gre'>Nuestros stacks</h1>
+            <p class='p'>Estas son algunas de nuestras herramientas. Creemos en utilizar la herramienta adecuada para cada situación.</p>
+            <div class='flex flex-col flex-wrap items-center badges justify-center w-full'>
               <div>
                 <i class="devicon-html5-plain-wordmark colored"></i>
                 <i class="devicon-javascript-plain colored"></i>
@@ -42,7 +61,6 @@
                 <i class="devicon-rails-plain-wordmark colored"></i>
                 <i class="devicon-symfony-original-wordmark colored"></i>
                 <i class="devicon-codeigniter-plain-wordmark colored"></i>
-                
               </div>
               <div>
                 <i class="devicon-redux-original colored"></i>
@@ -50,22 +68,41 @@
                 <i class="devicon-kubernetes-plain-wordmark colored"></i>
                 <i class="devicon-docker-plain-wordmark colored"></i>
               </div>
-              
-              
             </div>
           </div>
         </div>
       </section>
       <section class='relative flex w-full items-center products-container' name='our-products'>
+        <div class='overlay flex items-center   overlay-container w-full w-100'>
         <h1 class='h1 h1-cornern'>Featured Product</h1>
-        <div class='flex flex-col items-center w-50'>
+        <div class='flex flex-col items-center mcont w-100'>
           <h1 class='product-title text-center'>Cloud Appointments manager<br><span>healtcare services edition</span></h1>
-          <p class='p p-small'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          <p class='p p-small text-start'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
           <div class='flex flex-wrap m-1'>
-            <button class='button button-gray'>More Information</button>  <button class='button button-gray'>Schedule a demo</button>
+            <button class='button button-yellow'>More Information</button>  <button class='button button-transparent'>Schedule a demo</button>
           </div>
         </div>
-        <div class='w-50 diagonal diagonal-clinic'></div>
+        </div>
+      </section>
+      <section class='relative filler w-full flex flex-col justify-center items-center'>
+        <div class=' flex flex-col  justify-center items-center'>
+          <h2 class='filler-h2'>Como trabajamos?</h2>
+          <div class='underline-h2'></div>
+        </div>
+        <div class='flex justify-center items-center flex-wrap'>
+        <article class='article'>
+          <div class='flex items-center'><i class="fas fa-user-tie"></i><h3 class='text-gre'>Buisness Oriented</h3></div>
+          <p>Trabajamos en conjunto con los negocios, para encontrar soluciones adecuadas al proceso de negocio del cliente.</p>
+        </article>
+          <article class='article'>
+          <div class='flex items-center'><i class="fas fa-user-tie"></i><h3 class='text-gre'>Funciones a la carta</h3></div>
+          <p>Muchas de nuestras soluciones vienen con decenas de features las cuales se pueden incorporar u omitir, resultando en presupuestos acordes a la necesidad y el contexto.</p>
+        </article>
+                  <article class='article'>
+          <div class='flex items-center'><i class="fas fa-user-tie"></i><h3 class='text-gre'>Funciones a la carta</h3></div>
+          <p>Muchas de nuestras soluciones vienen con decenas de features las cuales se pueden incorporar u omitir, resultando en presupuestos acordes a la necesidad y el contexto.</p>
+        </article>
+        </div>
       </section>
       <section name='contact' class='relative contact-container flex flex-col justify-center items-center'>
         <div class='overlay flex flex-col justify-center items-center h-100 w-100'>
@@ -87,4 +124,5 @@
       </section>
     </main>
   </body>
+  <script type="text/javascript" src="nav.js"></script>
 </html>
