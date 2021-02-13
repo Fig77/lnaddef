@@ -293,7 +293,7 @@ h1,h2,h3 {
 
 .container-whatdo {
 background-color: transparent;
-
+margin-bottom: 50px;
 
 min-height: 100vh;
 }
@@ -329,7 +329,7 @@ min-height: 100vh;
 .products-container {
 	background-color: #ffffff;
 	min-height: 100vh;
-	margin-top: 100px;
+	
 }
 
 .overlay-container {
@@ -600,4 +600,23 @@ input {
 	width: 30%;
 	padding: 20px;
 	min-width: 350px;
+}
+
+.article-h3 {
+ font-size: 22px;
+ letter-spacing: 0.5px;
+}
+
+.article-h3 > p {
+	font-size: 20px;
+	letter-spacing: 0.5px;
+	color: #212121;
+}
+
+.article-i {
+	color: #ffd700;
+	font-size: 22px;
+	margin-bottom: 22px;
+	margin-top: auto;
+	margin-left: 7px;
 }
