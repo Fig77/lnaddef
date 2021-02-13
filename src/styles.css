@@ -328,8 +328,7 @@ min-height: 100vh;
 
 .products-container {
 	background-color: #ffffff;
-	min-height: 100vh;
-	
+	min-height: 100vh;	
 }
 
 .overlay-container {
@@ -597,26 +596,29 @@ input {
 }
 
 .article {
-	width: 30%;
-	padding: 20px;
-	min-width: 350px;
+	margin: 20px;
+	padding: 25px;
+	width: 350px;
+	height: 200px;
+	background: rgba(0,0,0,.7);
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+	color: #fafafa;
 }
 
 .article-h3 {
  font-size: 22px;
  letter-spacing: 0.5px;
+ color: #fafafa !important;
 }
 
 .article-h3 > p {
 	font-size: 20px;
 	letter-spacing: 0.5px;
-	color: #212121;
+	color: #fafafa;
 }
 
 .article-i {
 	color: #ffd700;
-	font-size: 22px;
-	margin-bottom: 22px;
+	font-size: 40px;
 	margin-top: auto;
-	margin-left: 7px;
 }
