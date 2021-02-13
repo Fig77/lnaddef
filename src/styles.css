@@ -11,8 +11,13 @@ body {
 textarea,
 input,
 select {
-  margin: 0;
+  margin: 10px 0 0 0;
   vertical-align: bottom;
+}
+
+a, a:link, a:visited, a:active {
+	color: inherit;
+	text-decoration: inherit;
 }
 
 .overflow-x {
@@ -75,7 +80,7 @@ nav > ul > li {
 	letter-spacing: 3.5px;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 500px) {
 	.hamburguer {
 		left: 5px;
 }
@@ -425,7 +430,6 @@ min-height: 100vh;
 	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
-	padding: 6px;
 }
 
 .textarea {
@@ -453,8 +457,16 @@ form {
 
 @media (max-width: 470px) {
 	.input {
-		margin: 0;
+		margin: 5px 0 0 0;
 	}
+	.p-small {
+	text-align: start;
+	width: 95%;
+}
+
+.p {
+	width: 90%;
+}
 
 	input {
 		width: 90%;
@@ -619,6 +631,10 @@ form {
 	min-height: 100vh;
 }
 
+.areadiv {
+	margin-top: 10px;
+}
+
 .filler-h2 {
 	text-align: center;
 	letter-spacing: 2px;
@@ -637,8 +653,8 @@ form {
 .article {
 	margin: 20px;
 	padding: 25px;
-	width: 350px;
-	height: 200px;
+	max-width: 350px;
+	height: 250px;
 	border-style: solid 1px;
 	border-color: #445555;
 	background-color: rgba(0,0,0,.7);
