@@ -337,6 +337,7 @@ min-height: 100vh;
 
 .product-title {
   font-weight: normal;
+  font-size: 27px;
   letter-spacing: 1px;
   color: #212121;
 }
@@ -600,7 +601,9 @@ input {
 	padding: 25px;
 	width: 350px;
 	height: 200px;
-	background: rgba(0,0,0,.7);
+	border-style: solid 1px;
+	border-color: #445555;
+	background-color: rgba(0,0,0,.5);
 	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
 	color: #fafafa;
 }
@@ -615,6 +618,7 @@ input {
 	font-size: 20px;
 	letter-spacing: 0.5px;
 	color: #fafafa;
+	line-height: 0.5px;
 }
 
 .article-i {
