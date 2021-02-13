@@ -4,7 +4,7 @@
   "description": "Random divs to hold the domain place",
   "main": "nav.js",
   "scripts": {
-    "concat:css": "concat -o src/styles.concat.css src/styles.css src/norm.css",
+    "concat:css": "concat -o src/styles.concat.css src/norm.css src/styles.css",
     "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" src/styles.concat.css -o src/style.prefix.css",
     "compress:css": "css-minify --dir src/ styles.prefix.css --output build/ styles.css",
     "build:css": "npm-run-all concat:css prefix:css compress:css"

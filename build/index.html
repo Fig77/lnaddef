@@ -7,7 +7,7 @@
     <meta name="description" content="Desarrollo de aplicaciones para negocios."/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&Gudea:wght@400;700&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link href="style.prefix.min.css" rel="stylesheet">
 <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -16,8 +16,8 @@
 
     <title>DigitalSyrup</title>
   </head>
-  <body>
-    <button id="hamburguer" class="hamburguer hamburger hamburger--slider" type="button">
+<body>
+    <button type="button" id="hamburguer" class="hamburguer hamburger hamburger--slider">
        <span class="hamburger-box">
        <span class="hamburger-inner"></span>
       </span>
@@ -26,11 +26,11 @@
       <ul>
         <li class='linav flex items-center'><a href="#">Home</a></li>
         <div class='line-div'></div>
-        <li class='linav flex items-center'><a href="#work">Nosotros</a></li>
+        <li class='linav flex items-center'><a href="#us">Nosotros</a></li>
         <div class='line-div'></div>
         <li class='linav flex items-center'><a href="#clinica">Productos</a></li>
         <div class='line-div'></div>
-        <li class='linav flex items-center'><a href="contacto">Contacto</a></li>
+        <li class='linav flex items-center'><a href="#contact">Contacto</a></li>
         <div class='line-div'></div>
       </ul>
     </nav>
@@ -41,12 +41,12 @@
             <h1 class='h1 text-white'>Soluciones Digitales </h1>
             <p class='p text-white text-center'>Nos enfocamos en la digitalización y automatización de servicios, para brindar valor agregado a tu negocio.</p>
             <div class='flex justify-center items-center'>
-              <button class='button button-yellow'>Contáctanos</button>
+              <button type="button" class='button button-yellow'><a href="#contact">Contáctanos</a></button>
             </div>
           </div>
         </div>
       </header>
-      <section id="work" class='relative filler w-full flex flex-col justify-center items-center'>
+      <section id="us" class='overflow-x relative filler w-full flex flex-col justify-center items-center'>
         <div class=' flex flex-col  justify-center items-center'>
           <h2 class='filler-h2'>Como trabajamos?</h2>
           <div class='underline-h2'></div>
@@ -81,7 +81,7 @@
         </div>
       </section>
       
-      <section id="clinca" class='relative flex w-full items-center products-container' name='our-products'>
+      <section id="clinica" class='relative flex w-full items-center products-container' name='our-products overflow-x'>
         <div class='overlay flex items-center   overlay-container w-full w-100'>
         <div class='flex flex-col justify-center items-center mcont w-100'>
           <h1 class='product-title text-center'>Cloud Appointments manager<br><span>healtcare services edition</span></h1>
@@ -120,8 +120,7 @@
           </div>
         </div>
       </section>
-      
-      <section id='contact' class='relative contact-container flex flex-col justify-center items-center'>
+      <section id='contact' class='relative contact-container flex flex-col justify-center items-center overflow-x w-full'>
         <div class='overlay flex flex-col justify-center items-center h-100 w-100'>
           <h1 class='h1 text-white'>Contactanos para mas información</h1>
           <p class='p text-white'>Para programar demos, obtener detalles o consultas varias, escribe tu mensaje y contestaremos en la brevedad.</p>
@@ -131,10 +130,10 @@
                 <input type="text" name="nombre" placeholder='Nombre' required>
                 <input type='email' name="mail" class='input' placeholder="Email" required>
               </div>
-              <div class='flex'>
+              <div class='flex areadiv'>
                 <textarea type='textarea' name="message" class='textarea' placeholder="Mensaje" required=""></textarea> 
               </div>
-              <button tyoe="submit" rel="_noreferrer" target="_blank" class='button button-yellow m-left-0'>Enviar</button>
+              <button type="submit" rel="_noreferrer" target="_blank" class='button button-yellow m-left-0'>Enviar</button>
             </form>
           </div>
         </div>
