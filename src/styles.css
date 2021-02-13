@@ -8,13 +8,23 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 }
+textarea,
+input,
+select {
+  margin: 0;
+  vertical-align: bottom;
+}
+
+.overflow-x {
+	overflow-x: hidden;
+}
 
 nav {
 	transition-duration: 1s;
 	position: fixed;
 	width: 100vw;
 	top: -50vh;
-	right: 0;
+	left: 0;
 	padding: 5px 5px 5px 5px;
 	border-radius: 5px;
 	border-top-left-radius: 0px;
@@ -31,10 +41,11 @@ border-radius: 5px;
 
 .nav-active {
 	top: -20px;
+	left: 0;
 }
 
 .line-div {
-  width: 100%;
+  width: 50%;
   height: 1px;
   background-color:#ffdb19;
   margin: 2px 0 2px 0; 
@@ -59,9 +70,6 @@ nav > ul > li {
    cursor: pointer;
  }
 
-.hamburguer {
-	right: 300px !important;
-}
 
 .div-whatdo > .h1 {
 	letter-spacing: 3.5px;
@@ -70,6 +78,10 @@ nav > ul > li {
 @media (min-width: 420px) {
 	.hamburguer {
 		left: 5px;
+}
+
+.hamburger {
+	right: 0;
 }
 
 	nav > ul {
@@ -308,7 +320,7 @@ min-height: 100vh;
 }
 
 .badges {
-  margin: 75px 0 0 0;
+  margin: 45px 0 0 0;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -317,6 +329,8 @@ min-height: 100vh;
 	margin-top: 35px;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .badges > div > i {
@@ -337,7 +351,7 @@ min-height: 100vh;
 
 .product-title {
   font-weight: normal;
-  font-size: 27px;
+  font-size: 30px;
   letter-spacing: 1px;
   color: #212121;
 }
@@ -411,25 +425,49 @@ min-height: 100vh;
 	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
+	padding: 6px;
 }
-
-.div-input {}
 
 .textarea {
 	width: 100%;
+	max-width: 560px;
 	min-height: 150px;
+
 }
 
-input {
+input,textarea {
 	margin: 5px 0 5px 0;
-	padding: 0;
+	padding: 5px;
+	background-color: rgba(255,255,255,0.8);
+	border-style: none;
+	
+}
+
+form {
+	padding: 5px;
 }
 
 .input {
 	margin-left: 16px;
 }
 
-.mcont {}
+@media (max-width: 470px) {
+	.input {
+		margin: 0;
+	}
+
+	input {
+		width: 90%;
+	}
+
+	.textarea {
+		width: 90%;
+	}
+
+	.fix {
+		justify-content: start;
+	}
+}
 
 .support-container {
 	background-image: url('../humans.png');
@@ -506,7 +544,7 @@ input {
 .hamburger {
 	position: fixed;
 	top: 5px;
-	right: 1%;
+	right: 0vw;
 	z-index: 100;
 	  padding: 15px 15px;
   display: inline-block;
@@ -603,7 +641,7 @@ input {
 	height: 200px;
 	border-style: solid 1px;
 	border-color: #445555;
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0,0,0,.7);
 	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
 	color: #fafafa;
 }
